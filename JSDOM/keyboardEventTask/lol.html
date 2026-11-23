@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Клавиша я нажата <span id="span">0</span></p>
+    <script>
+        // document.addEventListener("keyup", () => {
+        //     console.log("Отпустили кнопку")
+        // })
+        
+        // document.addEventListener("keydown", (e) => {
+        //     console.log("Нажали кнопку", e)
+        // })
+
+        // document.addEventListener("keydown", (e) => {
+        //     if(e.code == "KeyZ") alert("Completed")
+        // })
+
+        document.addEventListener("keydown", (e) => {
+            if(e.code == "KeyZ" && e.repeat == false) span.textContent++
+        })
+
+    </script>
+</body>
+</html>

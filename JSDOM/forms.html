@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="reg">
+        <input type="text" name="login">
+        <input type="password" name="password">
+        <button type="submit">Send</button>
+    </form>
+
+    <script>
+        const form = document.forms.reg
+        const login = form.login
+        const password = form.password
+       
+
+        // работает так же на форму и будет срабатывать на все эдементы в ней 
+        // срабатывает после изменения значения в форме + потери фокуса
+        login.onchange = () => {
+            console.log("change")
+        }
+        // input -  каждое изменение значения в форме, даже без сохранения
+        login.oninput = () =>{
+            console.log("input")
+        }
+        // cut, copy, paste
+        login.onpaste = () => {
+            console.log("Вставляет")
+        }
+
+        form.onsubmit = (e) => {
+            e.preventDefault()
+            form.reset()
+            alert("отправили")
+            form.submit()
+        }
+
+
+        // form.addEventListener("focusin", () =>  {
+        //     form.style.border = "1px solid blue"
+        // })
+
+        // form.addEventListener("focusout", () =>  {
+        //     form.style.border = "none"
+        // })
+
+        // login.focus()
+
+        // login.onfocus = () => {
+        //     document.body.style.backgroundColor = "yellow"
+        //     console.log("Сфокусировался на логине")
+        // }
+
+        // login.onblur = () => {
+        //     if (!login.value.includes("@")) document.body.style.backgroundColor = "red" 
+        //     else document.body.style.backgroundColor = "green"
+        //     console.log("Расфокусировался")
+        // } 
+        </script>
+    </body>
+</html>

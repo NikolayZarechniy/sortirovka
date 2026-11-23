@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Последняя нажатая клавиша: <span class="key"> </span></p>
+    <p> Её код: <span class="code"> </span></p>
+    <p>нажата клавиша: <span class="key"> </span> (код:<span class="code"> </span> ) </p>
+    <p class="shift">shift</p>
+
+    <script>
+        const spKey = document.querySelectorAll(".key")
+        const spCode = document.querySelectorAll(".code")
+        const shift = document.querySelector(".shift")
+        document.addEventListener("keydown", (e) => {
+            spKey.forEach(tex => {
+                tex.textContent = e.key
+            })
+
+            spCode.forEach(tex => {
+                tex.textContent = e.code
+            })
+
+            if(e.shiftKey) shift.style.color = "green"; else shift.style.color = "red"
+        })
+    </script>
+</body>
+</html>

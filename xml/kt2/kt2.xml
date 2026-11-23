@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notebook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ktsozd.xsd">
+
+    <offices>
+        <office code="ZENIT">ZENIT</office>
+        <office code="ITHUB">ITHUB</office>
+    </offices>
+
+    <person id="a" office="ZENIT">
+        <name>
+            <first>Александр</first>
+            <surname>Соболев</surname>
+        </name>
+        <address>
+            <index>76409812</index>
+            <city>Санкт-Петербург</city>
+            <street>Футбольная аллея 1</street>
+        </address>
+        <phones>
+            <phone type="home">+7-912-83-45-909</phone>
+            <phone>+7-812-72-90-307</phone>
+        </phones>
+    </person>
+
+    <person id="b" office="ITHUB">
+        <name>
+            <first>Антон</first>
+            <surname>Армейцев</surname>
+        </name>
+        <address>
+            <city>Санкт-Петербург</city>
+            <street>Апртекарский</street>
+            <index>32167809</index>
+        </address>
+        <phones>
+            <phone>+7-922-25-67-013</phone>
+        </phones>
+    </person>
+
+</notebook>

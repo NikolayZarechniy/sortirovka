@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE timeTable SYSTEM "kt1.dtd">
+
+<timeTable>
+    <complexes>
+        <complex code="IT">
+            <name>колледж "IThub"</name>
+            <address>Аптекарский проспект, 2</address>
+        </complex>
+        <complex code="FOOTBALL">
+            <name>Газпром Арена</name>
+            <address>футбольная аллея 1</address>
+        </complex>
+    </complexes>
+
+    <lessons>
+        <lesson no="1" complex="IT">
+            <date>2026-05-10</date>
+            <time>10:40</time>
+        </lesson>
+        <lesson no="2" complex="FOOTBALL">
+            <date>2026-05-10</date>
+            <time>12:30</time>
+        </lesson>
+        <lesson no="3" complex="IT">
+            <date>2026-05-11</date>
+            <time>09:00</time>
+        </lesson>
+    </lessons>
+</timeTable>
